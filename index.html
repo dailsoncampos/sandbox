@@ -87,19 +87,13 @@
     
     <!-- Plugin Bot Kommunicate-->
     <script type="text/javascript">
-      (function(d, m){
-
-        var kommunicateSettings = {"appId": appId,"11a884bd89439bc2b44034b50ead94573":agentId,"conversationTitle":conversationTitle,"botIds":["laricabot"],"onInit":callback,"isAnonymousChat":true};
-
-        var s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
+      (function(d, m){ 
+        var o = {"appId":"11a884bd89439bc2b44034b50ead94573","isAnonymousChat":true,"agentId":"coderspj@gmail.com","agentName":"Soprojetos","botIds":["laricabot"],"conversationTitle":"Soprojetos","email":""};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
         s.src = "https://api.kommunicate.io/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0];
-        h.appendChild(s);
-        window.kommunicate = m;
-        m._globals = kommunicateSettings;
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = o;
       })(document, window.kommunicate || {});
-    </script>
+  </script>
   </body>
 </html>
